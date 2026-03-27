@@ -92,7 +92,7 @@ export default function App() {
             className="w-full max-w-3xl mb-16"
           >
             <img 
-              src="大封面.png" 
+              src="/大封面.png" 
               alt="RELX CREATOR 22K" 
               className="w-full h-auto rounded-3xl shadow-2xl border border-white/10"
               referrerPolicy="no-referrer"
@@ -184,10 +184,10 @@ export default function App() {
 
               <div className="w-full lg:w-1/2 relative z-10">
                 <img
-                  src="容量比較.png"
+                  src="/容量比較.png"
                   alt="容量比較"
                   className="w-full h-auto rounded-2xl shadow-2xl border border-white/10 cursor-pointer hover:scale-[1.02] transition-transform duration-500"
-                  onClick={() => setSelectedImage('容量比較.png')}
+                  onClick={() => setSelectedImage('/容量比較.png')}
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -221,10 +221,10 @@ export default function App() {
           >
             <div className="w-1/2 rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 bg-zinc-900">
               <img 
-                src="小封面.jpeg" 
+                src="/小封面.jpeg" 
                 alt="前衛設計" 
                 className="w-full h-auto cursor-pointer hover:opacity-80 transition-opacity" 
-                onClick={() => setSelectedImage('小封面.jpeg')}
+                onClick={() => setSelectedImage('/小封面.jpeg')}
               />
             </div>
             <div className="w-1/2 space-y-3 md:space-y-6">
@@ -246,10 +246,10 @@ export default function App() {
           >
             <div className="w-1/2 rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 bg-zinc-900">
               <img 
-                src="產品照.png" 
+                src="/產品照.png" 
                 alt="豐富口味" 
                 className="w-full h-auto cursor-pointer hover:opacity-80 transition-opacity" 
-                onClick={() => setSelectedImage('產品照.png')}
+                onClick={() => setSelectedImage('/產品照.png')}
               />
             </div>
             <div className="w-1/2 space-y-3 md:space-y-6">
@@ -271,10 +271,10 @@ export default function App() {
             {/* Image */}
             <div className="w-full lg:w-1/2 relative z-10">
               <img
-                src="價格表.png"
+                src="/價格表.png"
                 alt="價格表"
                 className="w-full h-auto rounded-2xl shadow-2xl border border-white/10 cursor-pointer hover:scale-[1.02] transition-transform duration-500"
-                onClick={() => setSelectedImage('價格表.png')}
+                onClick={() => setSelectedImage('/價格表.png')}
                 referrerPolicy="no-referrer"
               />
             </div>
@@ -361,10 +361,10 @@ export default function App() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: index * 0.05 }}
                 className="group relative rounded-2xl overflow-hidden aspect-[3/4] bg-zinc-900 border border-white/5 cursor-pointer"
-                onClick={() => setSelectedImage(flavor.img)}
+                onClick={() => setSelectedImage("/" + flavor.img)}
               >
                 <img 
-                  src={flavor.img} 
+                  src={"/" + flavor.img} 
                   alt={flavor.name} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   referrerPolicy="no-referrer"
