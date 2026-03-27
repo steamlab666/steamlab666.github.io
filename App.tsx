@@ -12,24 +12,24 @@ export default function App() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const flavors = [
-    { name: "海鹽檸檬", img: "/口味1 海鹽檸檬.jpeg" },
-    { name: "清爽薄荷", img: "/口味2 清爽薄荷.jpeg" },
-    { name: "香甜桃子", img: "/口味3 香甜桃子.jpeg" },
-    { name: "西瓜冰", img: "/口味4 西瓜冰.jpeg" },
-    { name: "礦泉水", img: "/口味5 礦泉水.jpeg" },
-    { name: "梅子可樂", img: "/口味6 梅子可樂.jpeg" },
-    { name: "沙士汽水", img: "/口味7 沙士汽水.jpeg" },
-    { name: "茉香芭樂", img: "/口味8 茉香芭樂.jpeg" },
-    { name: "茉香西瓜", img: "/口味9茉香西瓜.jpeg" },
-    { name: "酸梅青檸汁", img: "/口味10 酸梅青檸汁.47.00.jpeg" },
-    { name: "鐵觀音", img: "/口味11 鐵觀音.47.12.jpeg" },
-    { name: "極涼青提", img: "/口味12 極涼青提.47.13.jpeg" },
-    { name: "貴妃荔枝", img: "/口味13 貴妃荔枝.47.14.jpeg" },
-    { name: "青提鐵觀音", img: "/口味14 青提鐵觀音.47.24.jpeg" },
-    { name: "巨峰葡萄", img: "/口味15 巨峰葡萄.47.25.jpeg" },
-    { name: "百香果茶", img: "/口味16 百香果茶.47.27.jpeg" },
-    { name: "甘草芭樂", img: "/口味17 甘草芭樂.47.28.jpeg" },
-    { name: "極涼青檸", img: "/口味18 極涼青檸.47.29.jpeg" },
+    { name: "海鹽檸檬", img: "口味1 海鹽檸檬.jpeg" },
+    { name: "清爽薄荷", img: "口味2 清爽薄荷.jpeg" },
+    { name: "香甜桃子", img: "口味3 香甜桃子.jpeg" },
+    { name: "西瓜冰", img: "口味4 西瓜冰.jpeg" },
+    { name: "礦泉水", img: "口味5 礦泉水.jpeg" },
+    { name: "梅子可樂", img: "口味6 梅子可樂.jpeg" },
+    { name: "沙士汽水", img: "口味7 沙士汽水.jpeg" },
+    { name: "茉香芭樂", img: "口味8 茉香芭樂.jpeg" },
+    { name: "茉香西瓜", img: "口味9茉香西瓜.jpeg" },
+    { name: "酸梅青檸汁", img: "口味10 酸梅青檸汁.47.00.jpeg" },
+    { name: "鐵觀音", img: "口味11 鐵觀音.47.12.jpeg" },
+    { name: "極涼青提", img: "口味12 極涼青提.47.13.jpeg" },
+    { name: "貴妃荔枝", img: "口味13 貴妃荔枝.47.14.jpeg" },
+    { name: "青提鐵觀音", img: "口味14 青提鐵觀音.47.24.jpeg" },
+    { name: "巨峰葡萄", img: "口味15 巨峰葡萄.47.25.jpeg" },
+    { name: "百香果茶", img: "口味16 百香果茶.47.27.jpeg" },
+    { name: "甘草芭樂", img: "口味17 甘草芭樂.47.28.jpeg" },
+    { name: "極涼青檸", img: "口味18 極涼青檸.47.29.jpeg" },
   ];
 
   // 替換為實際的 Google 表單連結
@@ -92,7 +92,7 @@ export default function App() {
             className="w-full max-w-3xl mb-16"
           >
             <img 
-              src="/大封面.png" 
+              src="大封面.png" 
               alt="RELX CREATOR 22K" 
               className="w-full h-auto rounded-3xl shadow-2xl border border-white/10"
               referrerPolicy="no-referrer"
@@ -184,10 +184,10 @@ export default function App() {
 
               <div className="w-full lg:w-1/2 relative z-10">
                 <img
-                  src="/容量比較.png"
+                  src="容量比較.png"
                   alt="容量比較"
                   className="w-full h-auto rounded-2xl shadow-2xl border border-white/10 cursor-pointer hover:scale-[1.02] transition-transform duration-500"
-                  onClick={() => setSelectedImage('/容量比較.png')}
+                  onClick={() => setSelectedImage('容量比較.png')}
                   referrerPolicy="no-referrer"
                 />
               </div>
@@ -221,10 +221,10 @@ export default function App() {
           >
             <div className="w-1/2 rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 bg-zinc-900">
               <img 
-                src="/小封面.jpeg" 
+                src="小封面.jpeg" 
                 alt="前衛設計" 
                 className="w-full h-auto cursor-pointer hover:opacity-80 transition-opacity" 
-                onClick={() => setSelectedImage('/小封面.jpeg')}
+                onClick={() => setSelectedImage('小封面.jpeg')}
               />
             </div>
             <div className="w-1/2 space-y-3 md:space-y-6">
@@ -246,10 +246,10 @@ export default function App() {
           >
             <div className="w-1/2 rounded-2xl md:rounded-3xl overflow-hidden border border-white/10 bg-zinc-900">
               <img 
-                src="/產品照.png" 
+                src="產品照.png" 
                 alt="豐富口味" 
                 className="w-full h-auto cursor-pointer hover:opacity-80 transition-opacity" 
-                onClick={() => setSelectedImage('/產品照.png')}
+                onClick={() => setSelectedImage('產品照.png')}
               />
             </div>
             <div className="w-1/2 space-y-3 md:space-y-6">
@@ -271,10 +271,10 @@ export default function App() {
             {/* Image */}
             <div className="w-full lg:w-1/2 relative z-10">
               <img
-                src="/價格表.png"
+                src="價格表.png"
                 alt="價格表"
                 className="w-full h-auto rounded-2xl shadow-2xl border border-white/10 cursor-pointer hover:scale-[1.02] transition-transform duration-500"
-                onClick={() => setSelectedImage('/價格表.png')}
+                onClick={() => setSelectedImage('價格表.png')}
                 referrerPolicy="no-referrer"
               />
             </div>
@@ -331,7 +331,7 @@ export default function App() {
               
               <div className="inline-flex items-center gap-3 bg-[#00B900] text-white px-6 py-3 md:px-8 md:py-4 rounded-full font-bold text-base md:text-lg shadow-[0_0_20px_rgba(0,185,0,0.3)] group-hover:shadow-[0_0_30px_rgba(0,185,0,0.5)] transition-all">
                 <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6 md:w-8 md:h-8">
-                  <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zm-18.988-2.595c.129 0 .234.105.234.234v4.153h2.254c.129 0 .233.104.233.233v.842c0 .129-.104.234-.233.234h-3.363c-.063 0-.119-.025-.161-.065-.043-.043-.068-.099-.068-.161v-5.237c0-.129.104-.233.233-.233h.871zm10.59 0c.129 0 .233.105.233.234v5.237c0 .129-.104.233-.233.233h-.871c-.129 0-.234-.104-.234-.233v-3.388l-2.258 3.468c-.035.053-.092.086-.153.086h-.827c-.129 0-.233-.104-.233-.233v-5.237c0-.129.104-.233.233-.233h.871c.129 0 .233.105.233.234v3.366l2.233-3.432c.036-.055.094-.088.157-.088h.849zm-4.706 0c.129 0 .234.105.234.234v5.237c0 .129-.105.233-.234.233h-.871c-.129 0-.234-.104-.234-.233v-5.237c0-.129.105-.233.234-.233h.871zm4.942 0c.129 0 .234.105.234.234v.842c0 .129-.105.234-.234.234h-2.254v1.138h2.254c.129 0 .234.104.234.233v.842c0 .129-.105.234-.234.234h-2.254v1.207h2.254c.129 0 .234.105.234.234v.842c0 .129-.105.233-.234.233h-3.363c-.063 0-.12-.025-.162-.065-.043-.043-.068-.099-.068-.161v-5.237c0-.129.105-.233.234-.233h3.363z"/>
+                  <path d="M24 10.304c0-5.369-5.383-9.738-12-9.738-6.616 0-12 4.369-12 9.738 0 4.814 4.269 8.846 10.036 9.608.391.084.922.258 1.057.592.121.303.079.778.039 1.085l-.171 1.027c-.053.303-.242 1.186 1.039.647 1.281-.54 6.911-4.069 9.428-6.967 1.739-1.907 2.572-3.843 2.572-5.992zm-18.988-2.595c.129 0 .234.105.234.234v4.153h2.254c.129 0 .233.104.233.233v.842c0 .129-.104.234-.233.234h-3.363c-.063 0-.119-.025-.161-.065-.043-.043-.068-.099-.068-.161v-5.237c0-.129.104-.233.233-.233h.871zm10.59 0c.129 0 .233.105.233.234v5.237c0 .129-.104.233-.233.233h-.871c-.129 0-.234-.104-.234-.233v-3.388l-2.258 3.468c-.035.053-.092.086-.153.086h-.827c-.129 0-.233-.104-.233-.233v-5.237c0-.129.104-.233.233-.233h.871c.129 0 .233.105.233.234v3.366l2.233-3.432c.036-.055.094-.088.157-.088h.849zm-4.706 0c.129 0 .234.105.234.234v5.237c0 .129-.105.233-.234.233h-.871c-.129 0-.234-.104-.234-.233v-5.237c0-.129.105-.233.234-.233h.871zm4.942 0c.129 0 .234.105.234.234v.842c0 .129-.105.234-.234.234h-2.254v1.138h2.254c.129 0 .234.104.234.233v.842c0 .129-.105.234-.234.234h-2.254v1.207h2.254c.129 0 .234.105.234.234v.842c0 .129-.105.233-.234.233h-3.363c-.063 0-.12-.025-.162-.065-.043-.043-.068-.099-.068-.161v-5.237c0-.129.105-.233.234-.233h3.363z">
                 </svg>
                 點擊這裡加入我們私密團購群組
               </div>
